@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Contactinformatie VIVES-campussen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Eenvoudige CSS voor leesbare tabel (gebruik CSS i.p.v. verouderde table-attributen) */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; max-width: 1200px; }
+        caption { font-weight: bold; margin-bottom: 8px; text-align: left; }
+        th, td {
+            border: 1px solid #444;
+            padding: 6px 8px;
+            vertical-align: top;
+        }
+        th { background:#eee; text-align: left; }
+        a { word-break: break-word; } /* lange links netjes afbreken */
+    </style>
+</head>
+<body>
+
+<h1>Contactinformatie VIVES-campussen</h1>
+
+<table>
+    <caption>Overzicht contactgegevens per campus</caption>
+
+    <thead>
+    <tr>
+        <th scope="col">Campus</th>
+        <th scope="col">Adres</th>
+        <th scope="col">Studiegebieden</th>
+        <th scope="col">Telefoonnummer</th>
+        <th scope="col">Fax</th>
+        <th scope="col">E-mailadres</th>
+        <th scope="col">Website</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <!-- Campus Kortrijk: 3 studiegebieden -> gebruik rowspan voor campus en adres -->
+    <tr>
+        <td rowspan="3">Kortrijk</td>
+        <td rowspan="3">Doorniksesteenweg 145, 8500 Kortrijk</td>
+        <td>Handelswetenschappen, Bedrijfsmanagement &amp; Informatica</td>
+        <td rowspan="3"><a href="tel:+3256264514">+32 56 26 45 14</a></td>
+        <td rowspan="3">+32 56 26 41 80</td>
+        <td rowspan="3"><a href="mailto:kortrijk@vives.be">kortrijk@vives.be</a></td>
+        <td rowspan="3"><a href="https://www.vives.be" target="_blank" rel="noopener">vives.be</a></td>
+    </tr>
+    <tr>
+        <td>Gezondheidszorg</td>
+    </tr>
+    <tr>
+        <td>Sociaal-agogisch Werk</td>
+    </tr>
+
+    <!-- Campus Roeselare: 2 studiegebieden -->
+    <tr>
+        <td rowspan="2">Roeselare</td>
+        <td rowspan="2">Wilgenstraat 32, 8800 Roeselare</td>
+        <td>Industrie &amp; Technologie</td>
+        <td rowspan="2"><a href="tel:+3256264515">+32 56 26 45 15</a></td>
+        <td rowspan="2">+32 56 26 41 81</td>
+        <td rowspan="2"><a href="mailto:roeselare@vives.be">roeselare@vives.be</a></td>
+        <td rowspan="2"><a href="https://www.vives.be/roeselare" target="_blank" rel="noopener">vives.be/roeselare</a></td>
+    </tr>
+    <tr>
+        <td>Biotechnologie</td>
+    </tr>
+
+    <!-- Campus Torhout: 1 studiegebied -->
+    <tr>
+        <td>Torhout</td>
+        <td>Sint-Jozefstraat 1, 8820 Torhout</td>
+        <td>Onderwijs</td>
+        <td><a href="tel:+3256264516">+32 56 26 45 16</a></td>
+        <td>+32 56 26 41 82</td>
+        <td><a href="mailto:torhout@vives.be">torhout@vives.be</a></td>
+        <td><a href="https://www.vives.be/torhout" target="_blank" rel="noopener">vives.be/torhout</a></td>
+    </tr>
+
+    <!-- Voorbeeld lege cel: gebruik &nbsp; in plaats van een lege <td></td> -->
+    <tr>
+        <td>Campus Voorbeeld</td>
+        <td>Voorbeeldstraat 10, 8000 Voorbeeld</td>
+        <td>&nbsp;</td> <!-- geen studiegebieden bekend -->
+        <td><a href="tel:+32123456789">+32 12 34 56 789</a></td>
+        <td>&nbsp;</td>
+        <td><a href="mailto:info@voorbeeld.be">info@voorbeeld.be</a></td>
+        <td><a href="https://www.voorbeeld.be" target="_blank" rel="noopener">voorbeeld.be</a></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
