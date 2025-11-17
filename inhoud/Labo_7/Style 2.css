@@ -1,0 +1,75 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    background-color: #F4F4F4;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.banner {
+    background-image: url('image labo 7/header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+.banner nav {
+    margin-top: auto;
+}
+
+.banner nav a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+section {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc
+
+}
+
+h2 {
+    text-decoration: underline;
+
+}
+.banner nav.menu a {
+    color: green;
+
+}
+.menu {
+    background-color: #444444;
+    padding: 8px 20px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.menu a {
+    color : green;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
