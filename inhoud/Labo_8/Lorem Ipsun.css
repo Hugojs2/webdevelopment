@@ -1,0 +1,29 @@
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+.container{
+    display: flex;
+
+}
+
+.col {
+    display: inline-block;
+    width: calc(50% - 20px);
+    padding: 10px;
+    border: 1px #000;
+    float: left;
+    margin: 10px;
+
+}
+
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+
+
+}

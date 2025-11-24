@@ -1,0 +1,57 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: rgb(68, 68, 68);
+    width: 95%;
+    margin: 0 auto;
+}
+    .left-section {
+        width: 70%;
+        margin: 30px;
+        padding: 20px;
+        background-color: #a7cece;
+        border: 1px dotted white;
+        color: rgb(68, 68, 68);
+        font-style: italic;
+        font-weight: normal;
+
+
+
+    }
+
+    .left-section .bold {
+        font-weight: bold;
+
+    }
+
+    .right-section {
+        width: 25%;
+        padding: 15px;
+        float: right;
+
+    }
+
+.right-section h1 {
+    color: rgb(0,126 ,126 );
+    font-size: 150%;
+
+}
+
+
+.right-section h2 {
+    color: rgb(0,126,126);
+    font-size: 130%;
+
+}
+
+.right-section a:hover {
+background-color: brown;
+    color: white;
+
+}
+
+footer {
+    font-size: 0.6em;
+    clear: both;
+
+}
