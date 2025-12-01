@@ -1,0 +1,28 @@
+article {
+    font-size: 1.25em;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+article:nth-child(even) img {
+    float: left;
+    margin-right: 10px;
+}
+
+article:nth-child(odd) img {
+    float: right;
+    margin-left: 10px;
+}
