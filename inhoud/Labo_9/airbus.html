@@ -3,7 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <title>Airbus A380</title>
-    <link rel="stylesheet" href="airbus1.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e6f3ff;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 10px;
+            background-image: url("images airbus/bgsky3.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            border-bottom: 2px dotted #87bfff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: darkblue;
+        }
+
+        .tekkleine {
+            position: absolute;
+            width: 180px;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .info-section {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            margin: 30px auto;
+            gap: 20px;
+            background-color: #d9d9d9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .info-left {
+            flex: 1.2;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .info-logo {
+            width: 80px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .info-left p {
+            margin: 0;
+        }
+
+        .info-right {
+            flex: 0.8;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .subsection h2 {
+            background-color: darkblue;
+            color: white;
+            margin: 0;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        .subsection p {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 6px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .foto-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            border: 2px dotted #87bfff;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .foto-grid h2 {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: darkblue;
+            margin-bottom: 10px;
+        }
+
+        .foto-grid img {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .footer-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .footer-content li {
+            margin: 5px 0;
+        }
+
+        footer p {
+            margin: 10px 0 0 0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -11,7 +154,6 @@
     <h1>De Airbus A380</h1>
     <img src="images%20airbus/tekklein.png" class="tekkleine" alt="Klein vliegtuigje">
 </header>
-
 
 <section class="info-section">
     <div class="info-left">
@@ -40,9 +182,9 @@
     </div>
 </section>
 
-
 <main>
     <section class="foto-grid">
+        <h2>Foto's van de Airbus A380</h2>
         <img src="images%20airbus/A380Grond.JPG" alt="A380Grond">
         <img src="images%20airbus/abramovich.jpg" alt="Abramovich">
         <img src="images%20airbus/binnen1.jpg" alt="Binnen 1">
@@ -57,7 +199,6 @@
         <img src="images%20airbus/transport.JPG" alt="Transport">
     </section>
 </main>
-
 
 <footer>
     <div class="footer-content">
@@ -77,8 +218,8 @@
             <li>A360</li>
             <li>A380 - 800</li>
         </ul>
-    </div>
-    <p class="copyright">&lt; © Airbus A380 &gt;</p>
+    </div> 
+    <p>&copy; Airbus A380</p>
 </footer>
 
 </body>

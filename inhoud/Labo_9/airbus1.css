@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -102,6 +103,13 @@ main {
     border-radius: 5px;
 }
 
+.foto-grid h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
 .foto-grid img {
     width: 100%;
     display: block;
@@ -136,4 +144,30 @@ footer {
 footer p {
     margin: 10px 0 0 0;
     font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+    .info-section {
+        flex-direction: column;
+    }
+
+    .foto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .foto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tekkleine {
+        width: 120px;
+        top: 40px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
 }
